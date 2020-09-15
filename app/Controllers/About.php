@@ -1,13 +1,12 @@
 <?php namespace App\Controllers;
 
-class Home extends BaseController
+class About extends BaseController
 {
-	const VIEW_PATH = 'pages/home/';
+	const VIEW_PATH = 'pages/about/';
 
 	public function index()
 	{
-		$data['pageTitle'] = 'Home';
-		
+		$data['pageTitle'] = 'About';
 		return view(self::VIEW_PATH . 'index', $data);
 	}
 
